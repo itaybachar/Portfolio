@@ -182,6 +182,7 @@ textarea.message{
 @media (max-width: 768px){
 	div.projectSection{
 		width: 90%;
+		background-color: #882c06;
 	}
 	div.aboutSection{
 		width: 90%;
