@@ -8,6 +8,7 @@ body {
 
 div.center {
 	padding: 0px;
+	width: 100%;
 }
 
 h1 {
@@ -25,7 +26,7 @@ h2 {
 	margin:5px auto;
 	color: #e6e6e6;
 	font-weight: 200;
-	width: 500px;
+	width: 20%;
 	font-size: 30px;
 	text-align: center;
 }
@@ -56,6 +57,7 @@ p.aboutMe {
 	font-weight: 300;
 	font-size: 20px;
 	word-wrap: normal;
+	width: 100%;
 }
 
 div.aboutSection {
@@ -88,6 +90,7 @@ div.horizontal {
 	flex-direction: row;
 	align-items: left;
 	justify-content: left;
+	width: 100%;
 }
 
 h4 {
@@ -95,11 +98,13 @@ h4 {
 	text-align: left;
 	font-weight: 200;
 	font-size: 30px;
+	width: 40%;
 }
 
 p.projectDesc {
 	word-wrap: normal;
 	margin: 10px 0px;
+	width: 100%;
 }
 
 img {
@@ -124,6 +129,7 @@ button.codeSnip:hover{
 	border: 2px solid #2d2d2d;
 	transition: 0.25s;
 	cursor: pointer;
+	width: 100%;
 	text-decoration: underline;
 }
 
@@ -140,6 +146,7 @@ div.contactSection{
 h3.contact {
 	color: #e6e6e6;
 	border-color: #e6e6e6;
+	width:50%;
 }
 
 input.name{
