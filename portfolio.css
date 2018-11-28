@@ -4,7 +4,7 @@ body {
 	background-color: #2d2d2d;
 	font-family: "Source Code Pro";
 	margin: 30px 0px 0px 0px;
-	-webkit-text-size-adjust: 50%;
+	-webkit-text-size-adjust: 70%;
 }
 
 div.center {
@@ -144,10 +144,12 @@ div.contactSection{
 }
 
 h3.contact {
+	margin: auto;
 	color: #e6e6e6;
 	border-color: #e6e6e6;
 	width:50%;
 	text-align: center;
+	font-size: 45px;
 }
 
 input.name{
