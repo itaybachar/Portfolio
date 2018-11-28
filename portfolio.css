@@ -21,13 +21,13 @@ h1 {
 	font-size: 65px;
 	text-transform: uppercase;
 	text-align: center;
+	
 }
 
 h2 {
 	margin:5px auto;
 	color: #e6e6e6;
 	font-weight: 200;
-	width: 20%;
 	font-size: 30px;
 	text-align: center;
 }
@@ -48,6 +48,7 @@ h3.projectsHeader {
 	text-align: center;
 	font-weight: 500px;
 	font-size: 45px;
+	width: 40%;
 	border-bottom: 2px solid #2d2d2d;
 }
 
@@ -152,31 +153,10 @@ h3.contact {
 	width: 100%;
 }
 
-input.name{
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-}
-
 p.info{
-	margin-top: 10%;
+	margin-top: 2px;
 	text-align: center;
 	color: #ccc;
-}
-
-textarea.message{
-	width: 100%;
-	height: 300px;
-	padding: 12px 20px;
-	margin: 8px 0px;
-	resize: none;
-	border: 1px solid #e6e6e6;
-	border-radius: 4px;
-	box-sizing: border-box;
 }
 
 @media only screen and (max-width: 768px){
@@ -189,6 +169,9 @@ textarea.message{
 		justify-content: center;
 		text-align: center;
 	}
+	h1{
+		width: 90%;
+	}
 	p.projectDesc{
 		text-align: center;
 	}
@@ -200,6 +183,9 @@ textarea.message{
 		width: 90%;
 	}
 	div.contactSection{
-		width:90%;
+		width:60%;
+	}
+	h3.projectsHeader{
+		width: 70%;
 	}
 }
