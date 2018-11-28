@@ -39,7 +39,6 @@ h3 {
 	font-weight: 300;
 	font-size: 45px;
 	border-bottom: 2px solid #2d2d2d;
-	width: 35%;
 }
 
 h3.projectsHeader {
@@ -49,7 +48,6 @@ h3.projectsHeader {
 	font-weight: 500px;
 	font-size: 45px;
 	border-bottom: 2px solid #2d2d2d;
-	width: 30%;
 }
 
 p.aboutMe {
@@ -62,6 +60,7 @@ p.aboutMe {
 
 div.aboutSection {
 	margin: 100px auto;
+	padding: 20px 30px;
 	background-color: #688593;
 	color: #2d2d2d;
 	border: 3px solid #882c06 ;
@@ -70,7 +69,7 @@ div.aboutSection {
 }
 
 div.projectSection {
-	padding: 20px 0px;
+	padding: 20px 30px;
 	background-color: #e6e6e6;
 	width: 100%;
 	box-shadow: 10px 10px 5px;
@@ -137,17 +136,15 @@ div.contactSection{
 	margin: 100px auto;
 	padding: 20px 30px;
 	align-content: center;
-
 	background-color: #882c06;
-	width: 40%;
+	width: 50%;
 	box-shadow: 10px 10px 5px;
 }
 
 h3.contact {
 	margin: auto;
 	color: #e6e6e6;
-	border-color: #e6e6e6;
-	width:50%;
+	border-color: #e6e6e6;	
 	text-align: center;
 	font-size: 45px;
 }
