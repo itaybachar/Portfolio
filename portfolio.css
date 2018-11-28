@@ -17,7 +17,7 @@ h1 {
 	color: #e6e6e6;
 	font-weight: 300;
 	border-top: 2px solid;
-    width: 50%;  
+	width: 50%;  
 	font-size: 65px;
 	text-transform: uppercase;
 	text-align: center;
@@ -38,6 +38,7 @@ h3 {
 	text-align: center;
 	font-weight: 300;
 	font-size: 45px;
+	width: 70%;
 	border-bottom: 2px solid #2d2d2d;
 }
 
@@ -108,7 +109,8 @@ p.projectDesc {
 
 img {
 	margin: 10px 10px;
-	height: 100px;
+	width: 15%;
+	height: 15%;
 }
 
 button.codeSnip {
@@ -123,7 +125,7 @@ button.codeSnip {
 }
 
 button.codeSnip:hover{
-	background-color: #688593;
+	background-color: #ccc;
 	color: #141414;
 	border: 2px solid #2d2d2d;
 	transition: 0.25s;
@@ -133,11 +135,11 @@ button.codeSnip:hover{
 }
 
 div.contactSection{
-	margin: 100px auto;
-	padding: 20px 30px;
+	margin: 50px auto;
+	padding: 10px 10px;
 	align-content: center;
 	background-color: #882c06;
-	width: 50%;
+	width: 20%;
 	box-shadow: 10px 10px 5px;
 }
 
@@ -147,25 +149,44 @@ h3.contact {
 	border-color: #e6e6e6;	
 	text-align: center;
 	font-size: 45px;
+	width: 100%;
 }
 
 input.name{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+p.info{
+	margin-top: 10%;
+	text-align: center;
+	color: #ccc;
 }
 
 textarea.message{
 	width: 100%;
 	height: 300px;
-    padding: 12px 20px;
+	padding: 12px 20px;
 	margin: 8px 0px;
 	resize: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+	border: 1px solid #e6e6e6;
+	border-radius: 4px;
 	box-sizing: border-box;
+}
+
+@media (max-width: 768px){
+	div.projectSection{
+		width: 90%;
+	}
+	div.aboutSection{
+		width: 90%;
+	}
+	div.contactSection{
+		width:90%;
+	}
 }
