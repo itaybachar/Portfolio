@@ -39,7 +39,7 @@ h3 {
 	font-weight: 300;
 	font-size: 45px;
 	border-bottom: 2px solid #2d2d2d;
-	width: 50%;
+	width: 35%;
 }
 
 h3.projectsHeader {
@@ -58,7 +58,6 @@ p.aboutMe {
 	font-weight: 300;
 	font-size: 20px;
 	word-wrap: normal;
-	width: 100%;
 }
 
 div.aboutSection {
@@ -90,7 +89,6 @@ div.horizontal {
 	flex-direction: row;
 	align-items: left;
 	justify-content: left;
-	width: 100%;
 }
 
 h4 {
@@ -102,9 +100,11 @@ h4 {
 }
 
 p.projectDesc {
+	text-align: left;
 	word-wrap: normal;
 	margin: 10px 0px;
-	width: 100%;
+	font-weight: 300;
+	font-size: 18px;
 }
 
 img {
@@ -147,6 +147,7 @@ h3.contact {
 	color: #e6e6e6;
 	border-color: #e6e6e6;
 	width:50%;
+	text-align: center;
 }
 
 input.name{
