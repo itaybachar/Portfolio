@@ -1,15 +1,16 @@
-var button = document.getElementById("snip1");
-var expanded = false;
-var theDiv = document.getElementById("code");
+var gifSrc = "res/smile.jpg"
+var projName = "Project Name";
+var projDesc = " Description....";
+var projCodeId = "code";
+var buttonId = "buttonID";
+var customProject = "<div class='project'><div class='horizontal'><img src='" + gifSrc + "'><div><h4>" +projName + "</h4><p class='projectDesc'>" +projDesc + "</p></div></div><div id='" +projCodeId +"'></div><button id='"+buttonId+ "' class='codeSnip'><span>Code Snippet</span></button></div>";
 
-var content = "<p class='info' >AHRIUEHE IAUDNIWAND IUANDIWUA NDUAINW UWIAN DUIWAND IUWANDUI NAWDUIN AWIUDN IWUAND IUAWNDUIANDIUANDIUADNIUAWNDAIWUDNWAIUDN N AI NIW ND IAUND I awd</p>";
-button.addEventListener("click",function(){
-    if(!expanded){
-       // document.getElementById("code").innerHTML = "Argg";
-         theDiv.innerHTML = content;
-         expanded = true;
-    } else {
-        theDiv.innerHTML = "";
-        expanded = false;
+//Populate <projects> div
+function loadProjects(){
+    var projSection = document.querySelector("projects");
+
+    for(var i = 0; i<5;i++){
+        projSection.innerHTML += customProject;
     }
-});
+}
+
