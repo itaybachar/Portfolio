@@ -109,8 +109,8 @@ p.projectDesc {
 
 img {
 	margin: 10px 10px;
-	width: 15%;
-	height: 15%;
+	height: 100px;
+
 }
 
 button.codeSnip {
@@ -179,10 +179,22 @@ textarea.message{
 	box-sizing: border-box;
 }
 
-@media (max-width: 768px){
-	div.projectSection{
-		width: 90%;
-		background-color: #882c06;
+@media only screen and (max-width: 768px){
+	div.project{
+		width: 100%;
+	}
+	div.horizontal{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	p.projectDesc{
+		text-align: center;
+	}
+	h4{
+		margin: auto;
+		text-align: center;
 	}
 	div.aboutSection{
 		width: 90%;
