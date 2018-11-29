@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,250,300,400,500,600,700,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,250,300,400,500,600,700,900,italic);
 
 body {
 	background-color: #2d2d2d;
@@ -97,7 +97,7 @@ h4 {
 	text-align: left;
 	font-weight: 200;
 	font-size: 30px;
-	width: 40%;
+	width: 100%;
 }
 
 p.projectDesc {
@@ -160,6 +160,17 @@ p.info{
 	color: #ccc;
 }
 
+div.code{
+	margin: 0% 2.5%;
+	width: 95%;
+	height: 100%;
+	background-color: #999897;
+	border-radius: 5px;
+}
+
+code {
+	color: #2d2d2d;
+}
 
 @media only screen and (max-width: 768px){
 	div.project{

@@ -18,8 +18,14 @@ function addListener(id){
 
     if(codeDiv.innerHTML === ""){
         codeDiv.innerHTML = "<code>" + projects[id].codeSnippet + "</code>";
+        document.getElementById(codeDivId).style.padding = "20px 20px";
+        document.getElementById(codeDivId).style.border= "2px solid #141414";
+        document.getElementById(id).innerText = "Hide Code Snippet";
     }else {
         codeDiv.innerHTML = "";
+        document.getElementById(codeDivId).style.padding = "0px";
+        document.getElementById(codeDivId).style.border= "none";
+        document.getElementById(id).innerText = "Show Code Snippet";
     }
 }   
 
@@ -39,7 +45,7 @@ function loadProjects(){
     for(var i = 0; i<projects.length;i++){
         var codeDivId = "code"+i;
         var snippetButtonId =i;
-        var customProject = "<div class='project'><div class='horizontal'><img src='" + projects[i].mediaAddress + "'><div><h4>" +projects[i].projectName + "</h4><p class='projectDesc'>" +projects[i].projectDescription + "</p></div></div><div id='" +codeDivId+"' class='code'></div><button id='"+snippetButtonId+ "' class='codeSnip' onclick='addListener(this.id)'><span>Code Snippet</span></button></div>";
+        var customProject = "<div class='project'><div class='horizontal'><img src='" + projects[i].mediaAddress + "'><div><h4>" +projects[i].projectName + "</h4><p class='projectDesc'>" +projects[i].projectDescription + "</p></div></div><div id='" +codeDivId+"' class='code'></div><button id='"+snippetButtonId+ "' class='codeSnip' onclick='addListener(this.id)'><span>Show Code Snippet</span></button></div>";
         //Inject Project into html
         projSection.innerHTML += customProject;
     }
