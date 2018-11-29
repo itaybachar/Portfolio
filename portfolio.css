@@ -114,6 +114,8 @@ img {
 
 }
 
+button:focus{outline: 0px;}
+
 button.codeSnip {
 	margin-top: 30px;
 	background: #141414;
