@@ -177,7 +177,8 @@ p.info{
 		text-align: center;
 	}
 	h4{
-		margin: auto;
+		margin:auto;
+		width: 100%;
 		text-align: center;
 	}
 	div.aboutSection{
