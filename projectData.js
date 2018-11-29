@@ -1,0 +1,4 @@
+
+projectData = '[{"projectName" : "Rubiks", "projectDescription" : "Cool rubiks cube project", "codeSnippet" : "WOA23432442 423 432 42354234 23 4234 234 234 234 23423 4234 234 23h", "mediaAddress":"res/smile.jpg", "githubLink":"www.github.com"},' +
+     '{"projectName" : "Bezier", "projectDescription" : "Bezier curve project", "codeSnippet" : "WOAh", "mediaAddress":"res/smile.jpg", "githubLink":"www.github.com"},'+
+     '{"projectName" : "Neural Net", "projectDescription" : "Neural net written from scratch", "codeSnippet" : "WOAh", "mediaAddress":"res/smile.jpg", "githubLink":"www.github.com"}]';
