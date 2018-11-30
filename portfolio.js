@@ -12,9 +12,16 @@ $( document ).ready(function() {
  });
 
 function collapseOther(id){
+    if(document.getElementById(id).innerText === "Show Code Snippet"){
+        document.getElementById(id).innerText = "Hide Code Snippet"
+    } else {document.getElementById(id).innerText = "Show Code Snippet"}
     for(var i = 0; i<projectAmount; i++){
         var codeDivId = "code"+i;
+        
+        if(i != id){
         document.getElementById(codeDivId).className = "collapse";
+        document.getElementById(i).innerText = "Show Code Snippet";
+        }
     }
 }
 
