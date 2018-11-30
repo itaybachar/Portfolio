@@ -1,6 +1,15 @@
 var projectDataLoc = "projectData.json";
 var projects = [];
 var projectAmount;
+var is_mobile = false;
+
+$( document ).ready(function() {      
+    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
+    if (isMobile.matches) {
+        is_mobile = true;
+    }
+ });
 
 function collapseOther(id){
     for(var i = 0; i<projectAmount; i++){
@@ -11,6 +20,8 @@ function collapseOther(id){
 
 //Populate <projects> div
 function loadProjects(){
+    console.log(is_mobile);
+    
     //Setup about me section:
     document.getElementById("aboutMe").innerText= aboutMe;
     //Load JSON file
@@ -44,31 +55,50 @@ function loadProjects(){
 }
 //Animate goto!
 $("#topNav").on('click', function(e) {
+    if(window.display)
     e.preventDefault();
     $('html, body').animate({
-         scrollTop: $("#top").offset().top - 170
+         scrollTop: $("#top").offset().top - 200
       }, 200);
  });
 
  $("#aboutNav").on('click', function(e) {
     e.preventDefault();
+    if(!is_mobile){
     $('html, body').animate({
          scrollTop: $("#aboutMe").offset().top - 170
       }, 200);
+    }else {
+        $('html, body').animate({
+            scrollTop: $("#aboutMe").offset().top - 280
+         }, 200);
+    }
  });
 
  $("#projectsNav").on('click', function(e) {
     e.preventDefault();
+    if(!is_mobile){
     $('html, body').animate({
          scrollTop: $("#projects").offset().top - 145
       }, 200);
+    }else{
+        $('html, body').animate({
+            scrollTop: $("#projects").offset().top - 280
+         }, 200);
+    }
  });
 
  $("#contactNav").on('click', function(e) {
     e.preventDefault();
+    if(!is_mobile){
     $('html, body').animate({
          scrollTop: $("#contact").offset().top - 170
       }, 200);
+    } else{
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top - 280
+         }, 200);
+    }
  });
 
 
