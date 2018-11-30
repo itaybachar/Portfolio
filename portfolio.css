@@ -76,14 +76,14 @@ div.aboutSection {
 	color: #2d2d2d;
 	border: 3px solid #882c06 ;
 	width: 45%;
-	box-shadow: 10px 10px 5px;
+	box-shadow: 10px 10px 5px #141414;
 }
 
 div.projectSection {
 	padding: 20px 30px;
 	background-color: #e6e6e6;
 	width: 100%;
-	box-shadow: 10px 10px 5px;
+	box-shadow: 10px 10px 5px #141414;
 }
 
 div.project {
@@ -153,7 +153,7 @@ div.contactSection{
 	align-content: center;
 	background-color: #882c06;
 	width: 20%;
-	box-shadow: 10px 10px 5px;
+	box-shadow: 10px 10px 5px #141414;
 }
 
 h3.contact {
