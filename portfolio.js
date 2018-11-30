@@ -70,7 +70,7 @@ $("#topNav").on('click', function(e) {
       }, 200);
     }else {
         $('html, body').animate({
-            scrollTop: $("#aboutMe").offset().top - 280
+            scrollTop: $("#aboutMe").offset().top - 330
          }, 200);
     }
  });
@@ -83,7 +83,7 @@ $("#topNav").on('click', function(e) {
       }, 200);
     }else{
         $('html, body').animate({
-            scrollTop: $("#projects").offset().top - 280
+            scrollTop: $("#projects").offset().top - 220
          }, 200);
     }
  });
@@ -96,7 +96,7 @@ $("#topNav").on('click', function(e) {
       }, 200);
     } else{
         $('html, body').animate({
-            scrollTop: $("#contact").offset().top - 280
+            scrollTop: $("#contact").offset().top
          }, 200);
     }
  });
