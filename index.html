@@ -6,23 +6,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>Itay Bachar</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="google-code-prettify/prettify.css">
 	<link rel="stylesheet" href="google-code-prettify/darkTheme.css">
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 <body onload="loadProjects();PR.prettyPrint()"> 
+	<nav class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			<a class="navbar-brand" href="#">Itay Bachar</a>
+		  </div>
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="#about">About Me</a></li>
+			<li><a href="#projects">My Projects</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+		  </ul>
+		</div>
+	  </nav>
+
 	<div  class="center">
 		<h1>Itay Bachar</h1>
 		<h2>Software Engineer</h2>
+		<a id="about"></a>
 		<div class="aboutSection">
 			<h3>About Me</h3>
-			<p class="aboutMe">
+			<p id="aboutMe" class="aboutMe">
 				Hey I am itay and I am a high school senior, I have been programming since I was 14 and I believe I have a strong foundation in Java and C++ programming.
 			</p>
 		</div>
-		
+		<a id="projects"></a>
 		<div class="projectSection"> 
 			<h3 class="projectsHeader">My Projects</h3>
 			<projects>
@@ -31,7 +47,7 @@
 		</div> 
 	</div>
 	
-	
+	<a id="contact"></a>
 	<div class="contactSection" class="container-fluid">
 		<h3 class="contact">Contact me</h3>
 		<p class="info">Email: itay.bachar01@gmail.com</p>	
@@ -39,11 +55,8 @@
 	
 </div>
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="projectData.js"></script>
+<script src="aboutData.js"></script>
 <script type="text/javascript" src="Project.js"></script>
 <script type="text/javascript" src="google-code-prettify/prettify.js"></script>
 <script src="portfolio.js"></script>

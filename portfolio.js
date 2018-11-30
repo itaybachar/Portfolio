@@ -2,6 +2,15 @@ var projectDataLoc = "projectData.json";
 var projects = [];
 var projectAmount;
 
+// window.addEventListener("hashchange", function() { 
+//     if(window.screen.width<768){
+//         console.log("yes");
+//         scrollBy(0, -210) 
+//     }else{
+//     scrollBy(0, -50) 
+//     }
+// })
+
 function addListener(id){
     var codeDivId = "code"+id;
     var codeDiv = document.getElementById(codeDivId);
@@ -34,6 +43,8 @@ function closeAllCodeSnippets(){
 
 //Populate <projects> div
 function loadProjects(){
+    //Setup about me section:
+    document.getElementById("aboutMe").innerText= aboutMe;
     //Load JSON file
     var data = JSON.parse(projectData);
     //Create array from the JSON
@@ -53,7 +64,6 @@ function loadProjects(){
         projSection.innerHTML += customProject;
     }
 }
-
 
 
 
