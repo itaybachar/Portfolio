@@ -15,15 +15,16 @@
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 <body onload="loadProjects();PR.prettyPrint()"> 
-	<nav class="navbar navbar-default navbar-static-top" role="navigation">
+	<a id="top">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
-		  <div class="navbar-header">
-			<a class="navbar-brand" href="#">Itay Bachar</a>
+		  <div class="navbar-header"id="topNav">
+			<a class="navbar-brand">Itay Bachar</a>
 		  </div>
 		  <ul class="nav navbar-nav">
-			<li class="active"><a href="#about">About Me</a></li>
-			<li><a href="#projects">My Projects</a></li>
-			<li><a href="#contact">Contact Me</a></li>
+			<li class="active" id="aboutNav"><a>About Me</a></li>
+			<li id="projectsNav"><a>My Projects</a></li>
+			<li id="contactNav"><a>Contact Me</a></li>
 		  </ul>
 		</div>
 	  </nav>
@@ -34,16 +35,12 @@
 		<a id="about"></a>
 		<div class="aboutSection">
 			<h3>About Me</h3>
-			<p id="aboutMe" class="aboutMe">
-				Hey I am itay and I am a high school senior, I have been programming since I was 14 and I believe I have a strong foundation in Java and C++ programming.
-			</p>
+			<p id="aboutMe" class="aboutMe"></p>
 		</div>
 		<a id="projects"></a>
 		<div class="projectSection"> 
 			<h3 class="projectsHeader">My Projects</h3>
-			<projects>
-				
-			</projects>
+			<projects></projects>
 		</div> 
 	</div>
 	

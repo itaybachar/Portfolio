@@ -2,42 +2,10 @@ var projectDataLoc = "projectData.json";
 var projects = [];
 var projectAmount;
 
-// window.addEventListener("hashchange", function() { 
-//     if(window.screen.width<768){
-//         console.log("yes");
-//         scrollBy(0, -210) 
-//     }else{
-//     scrollBy(0, -50) 
-//     }
-// })
-
-function addListener(id){
-    var codeDivId = "code"+id;
-    var codeDiv = document.getElementById(codeDivId);
-    if(codeDiv.innerHTML.length == 0){
-        closeAllCodeSnippets();
-        var pre = document.createElement('pre');
-        pre.className = "prettyprint linenums";
-        pre.innerHTML = PR.prettyPrintOne(projects[id].codeSnippet, 'java', true);
-        codeDiv.appendChild(pre);
-        document.getElementById(id).innerText = "Hide Code Snippet";
-    } else {
-        codeDiv.innerHTML ="";
-        document.getElementById(id).innerText = "Show Code Snippet";
-    }
-    
-}
-
-function closeAllCodeSnippets(){
-    for(var i = 0; i<projectAmount;i++){
+function collapseOther(id){
+    for(var i = 0; i<projectAmount; i++){
         var codeDivId = "code"+i;
-        var codeDiv = document.getElementById(codeDivId);
-        
-        if(codeDiv.innerHTML.length != 0){
-            codeDiv.innerHTML = "";
-            document.getElementById(i).innerText = "Show Code Snippet";
-        }
-        
+        document.getElementById(codeDivId).className = "collapse";
     }
 }
 
@@ -59,11 +27,49 @@ function loadProjects(){
     for(var i = 0; i<projects.length;i++){
         var codeDivId = "code"+i;
         var snippetButtonId =i;
-        var customProject = "<div class='project'><div class='horizontal'><img src='" + projects[i].mediaAddress + "'><div><h4>" +projects[i].projectName + "</h4><p class='projectDesc'>" +projects[i].projectDescription + "</p></div></div><div id='"+codeDivId+"'></div><button id='"+snippetButtonId+ "' class='codeSnip' onclick='addListener(this.id)'><span>Show Code Snippet</span></button></div>";
+
+        var customProject = `<div class='project'><div class='horizontal'>
+        <img src='` + projects[i].mediaAddress + `'>
+        <div><h4>` +projects[i].projectName + `
+        </h4><p class='projectDesc'>` +projects[i].projectDescription + `</p>
+        </div></div><div id='`+codeDivId+`' class='collapse out'>
+        <pre class='prettyprint linenums'>`+projects[i].codeSnippet+`</pre>
+        </div>
+        <button id='`+snippetButtonId+ `' class='codeSnip' data-toggle='collapse' data-target='#`+codeDivId+`' onclick='collapseOther(this.id)'>
+        <span>Show Code Snippet</span></button></div>`;
+
         //Inject Project into html
         projSection.innerHTML += customProject;
     }
 }
+//Animate goto!
+$("#topNav").on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+         scrollTop: $("#top").offset().top - 170
+      }, 200);
+ });
+
+ $("#aboutNav").on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+         scrollTop: $("#aboutMe").offset().top - 170
+      }, 200);
+ });
+
+ $("#projectsNav").on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+         scrollTop: $("#projects").offset().top - 145
+      }, 200);
+ });
+
+ $("#contactNav").on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+         scrollTop: $("#contact").offset().top - 170
+      }, 200);
+ });
 
 
 

@@ -3,7 +3,7 @@
 body {
 	background-color: #2d2d2d;
 	font-family: "Source Code Pro";
-	/* padding-top: 65px; */
+	padding-top: 65px;
 }
 
 li a.active {
@@ -14,6 +14,14 @@ li a.active {
 li a:hover:not(.active) {
 	background-color: #555;
 	color: white;
+}
+
+li:hover{
+	cursor: pointer;
+}
+
+a:hover{
+	cursor: pointer;
 }
 
 div.center {
@@ -116,6 +124,10 @@ p.projectDesc {
 	font-weight: 300;
 	font-size: 18px;
 	padding: 5px 5px;
+}
+
+pre {
+	word-wrap: none;
 }
 
 img {
