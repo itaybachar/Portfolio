@@ -16,48 +16,58 @@
 </head>
 <body onload="loadProjects();PR.prettyPrint()"> 
 	<a id="top">
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div class="container-fluid">
-		  <div class="navbar-header"id="topNav">
-			<a class="navbar-brand">Itay Bachar</a>
-		  </div>
-		  <ul class="nav navbar-nav">
-			<li class="active" id="aboutNav"><a>About Me</a></li>
-			<li id="projectsNav"><a>My Projects</a></li>
-			<li id="contactNav"><a>Contact Me</a></li>
-		  </ul>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-header"id="topNav">
+						<a class="navbar-brand">Itay Bachar</a>
+					</div>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active" id="aboutNav"><a>About Me</a></li>
+						<li id="projectsNav"><a>My Projects</a></li>
+						<li id="contactNav"><a>Contact Me</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div  class="center">
+			<h1>Itay Bachar</h1>
+			<h2>Software Engineer</h2>
+			<a id="about"></a>
+			<div class="aboutSection">
+				<h3>About Me</h3>
+				<p id="aboutMe" class="aboutMe"></p>
+			</div>
+			<a id="projects"></a>
+			<div class="projectSection"> 
+				<h3 class="projectsHeader">My Projects</h3>
+				<projects></projects>
+			</div> 
 		</div>
-	  </nav>
-
-	<div  class="center">
-		<h1>Itay Bachar</h1>
-		<h2>Software Engineer</h2>
-		<a id="about"></a>
-		<div class="aboutSection">
-			<h3>About Me</h3>
-			<p id="aboutMe" class="aboutMe"></p>
+		
+		<a id="contact"></a>
+		<div class="contactSection" class="container-fluid">
+			<h3 class="contact">Contact me</h3>
+			<p class="info">Email: itay.bachar01@gmail.com</p>	
 		</div>
-		<a id="projects"></a>
-		<div class="projectSection"> 
-			<h3 class="projectsHeader">My Projects</h3>
-			<projects></projects>
-		</div> 
+		
 	</div>
 	
-	<a id="contact"></a>
-	<div class="contactSection" class="container-fluid">
-		<h3 class="contact">Contact me</h3>
-		<p class="info">Email: itay.bachar01@gmail.com</p>	
-	</div>
+	<script src="projectData.js"></script>
+	<script src="aboutData.js"></script>
+	<script type="text/javascript" src="Project.js"></script>
+	<script type="text/javascript" src="google-code-prettify/prettify.js"></script>
+	<script src="portfolio.js"></script>
 	
-</div>
-
-<script src="projectData.js"></script>
-<script src="aboutData.js"></script>
-<script type="text/javascript" src="Project.js"></script>
-<script type="text/javascript" src="google-code-prettify/prettify.js"></script>
-<script src="portfolio.js"></script>
-
-
+	
 </body>
 </html>

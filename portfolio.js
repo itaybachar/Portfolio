@@ -20,7 +20,6 @@ function collapseOther(id){
 
 //Populate <projects> div
 function loadProjects(){
-    console.log(is_mobile);
     
     //Setup about me section:
     document.getElementById("aboutMe").innerText= aboutMe;
