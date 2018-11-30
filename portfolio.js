@@ -40,7 +40,7 @@ function loadProjects(){
     projectAmount = Object.keys(data).length;
     
     for(var i = 0; i< projectAmount; i++){
-        projects.push(new Project(data[i].projectName,data[i].projectDescription,code[i],data[i].mediaAddress,data[i].githubLink));
+        projects.push(new Project(data[i].projectName,data[i].projectDescription,codeSnippets[i],data[i].mediaAddress,data[i].githubLink));
     }
     
     //Populate the section
