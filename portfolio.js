@@ -50,7 +50,7 @@ function loadProjects(){
         var customProject = `<div class='project'><div class='horizontal'>
         <div class='vertical'>
         <img src='` + projects[i].mediaAddress + `'>
-        <a href='`+projects[i].githubLink+`'>
+        <a target='_blank' rel='noopener noreferrer' href='`+projects[i].githubLink+`'>
         <img class='github' src='res/githubLogo.png' >
         </a>
         </div>
