@@ -5,24 +5,26 @@ var is_mobile = false;
 
 $( document ).ready(function() {      
     var isMobile = window.matchMedia("only screen and (max-width: 760px)");
-
+    
     if (isMobile.matches) {
         is_mobile = true;
     }
- });
+});
 
 function collapseOther(id){
-    if(document.getElementById(id).innerText === "Show Code Snippet"){
-        document.getElementById(id).innerText = "Hide Code Snippet"
-    } else {document.getElementById(id).innerText = "Show Code Snippet"}
-    for(var i = 0; i<projectAmount; i++){
-        var codeDivId = "code"+i;
-        
-        if(i != id){
-        document.getElementById(codeDivId).className = "collapse";
-        document.getElementById(i).innerText = "Show Code Snippet";
+    sleep(50).then(() => {        
+        if(document.getElementById(id).innerText === "Show Code Snippet"){
+            document.getElementById(id).innerText = "Hide Code Snippet"
+        } else {document.getElementById(id).innerText = "Show Code Snippet"}
+        for(var i = 0; i<projectAmount; i++){
+            var codeDivId = "code"+i;
+            
+            if(i != id){
+                document.getElementById(codeDivId).className = "collapse";
+                document.getElementById(i).innerText = "Show Code Snippet";
+            }
         }
-    }
+    });
 }
 
 //Populate <projects> div
@@ -44,9 +46,14 @@ function loadProjects(){
     for(var i = 0; i<projects.length;i++){
         var codeDivId = "code"+i;
         var snippetButtonId =i;
-
+        
         var customProject = `<div class='project'><div class='horizontal'>
+        <div class='vertical'>
         <img src='` + projects[i].mediaAddress + `'>
+        <a href='`+projects[i].githubLink+`'>
+        <img class='github' src='res/githubLogo.png' >
+        </a>
+        </div>
         <div><h4>` +projects[i].projectName + `
         </h4><p class='projectDesc'>` +projects[i].projectDescription + `</p>
         </div></div><div id='`+codeDivId+`' class='collapse out'>
@@ -54,7 +61,7 @@ function loadProjects(){
         </div>
         <button id='`+snippetButtonId+ `' class='codeSnip' data-toggle='collapse' data-target='#`+codeDivId+`' onclick='collapseOther(this.id)'>
         <span>Show Code Snippet</span></button></div>`;
-
+        
         //Inject Project into html
         projSection.innerHTML += customProject;
     }
@@ -64,48 +71,55 @@ $("#topNav").on('click', function(e) {
     if(window.display)
     e.preventDefault();
     $('html, body').animate({
-         scrollTop: $("#top").offset().top - 200
-      }, 200);
- });
+        scrollTop: $("#top").offset().top - 200
+    }, 200);
+});
 
- $("#aboutNav").on('click', function(e) {
+$("#aboutNav").on('click', function(e) {
     e.preventDefault();
     if(!is_mobile){
-    $('html, body').animate({
-         scrollTop: $("#aboutMe").offset().top - 170
-      }, 200);
+        $('html, body').animate({
+            scrollTop: $("#aboutMe").offset().top - 170
+        }, 200);
     }else {
         $('html, body').animate({
             scrollTop: $("#aboutMe").offset().top - 330
-         }, 200);
+        }, 200);
     }
- });
+});
 
- $("#projectsNav").on('click', function(e) {
+$("#projectsNav").on('click', function(e) {
     e.preventDefault();
     if(!is_mobile){
-    $('html, body').animate({
-         scrollTop: $("#projects").offset().top - 145
-      }, 200);
+        $('html, body').animate({
+            scrollTop: $("#projects").offset().top - 145
+        }, 200);
     }else{
         $('html, body').animate({
             scrollTop: $("#projects").offset().top - 220
-         }, 200);
+        }, 200);
     }
- });
+});
 
- $("#contactNav").on('click', function(e) {
+$("#contactNav").on('click', function(e) {
     e.preventDefault();
     if(!is_mobile){
-    $('html, body').animate({
-         scrollTop: $("#contact").offset().top - 170
-      }, 200);
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top - 170
+        }, 200);
     } else{
         $('html, body').animate({
             scrollTop: $("#contact").offset().top
-         }, 200);
+        }, 200);
     }
- });
+});
+
+// sleep time expects milliseconds
+function sleep (time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+}
+
+
 
 
 

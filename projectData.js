@@ -59,5 +59,4 @@
 
 
 projectData = `[{"projectName" : "Rubik's Cube V2", "projectDescription" : "Rubiks cube app written in Java that includes Real world cube recognition and Rubiks cube solver. With this a user can scan in their Rubik's Cube and recieve a step by step solution to how to solve it accompanied by a visual of a 3D Rubik's Cube.", "mediaAddress" : "res/smile.jpg", "githubLink" : "https://github.com/itaybachar/RubiksCubeV2"},
-{"projectName" : "First ANN", "projectDescription" : "My first Artificial Neural Network written from scratch in C++. This is a very simplistic Network which has been trained on the MNIST dataset with 95% accuracy.", "mediaAddress" : "res/smile.jpg", "githubLink" : "www.github.com"},
-     {"projectName" : "Neural Net", "projectDescription" : "Neural net written from scratch", "mediaAddress":"res/smile.jpg", "githubLink":"www.github.com"}]`;
+{"projectName" : "First ANN", "projectDescription" : "My first Artificial Neural Network written from scratch in C++. This is a very simplistic Network which has been trained on the MNIST dataset with 95% accuracy.", "mediaAddress" : "res/smile.jpg", "githubLink" : "https://github.com/itaybachar/First-ANN"}]`;
