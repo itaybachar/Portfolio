@@ -110,16 +110,19 @@ div.project {
 }
 
 div.horizontal {
+	
 	display: flex;
 	flex-direction: row;
 	align-items: left;
 	justify-content: left;
 }
 #infoLogos {
+	
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	
 }
 
 h4 {
