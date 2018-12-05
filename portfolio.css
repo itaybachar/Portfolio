@@ -139,10 +139,10 @@ p.projectDesc {
 	font-size: 18px;
 	padding: 5px 5px;
 }
-
-.prettyprint {
+/* 
+pre.prettyprint {
 	white-space: pre;
-}
+} */
 
 img {
 	margin: 10px 10px;
@@ -206,7 +206,10 @@ img.github{
 	s{
 		display: none;
 	}
-	
+	/* pre.prettyprint {
+		white-space: pre;
+	}
+	 */
 	div.project{
 		width: 100%;
 	}
