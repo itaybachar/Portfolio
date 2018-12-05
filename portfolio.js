@@ -69,6 +69,7 @@ function loadProjects(){
 //Animate goto!
 $("#topNav").on('click', function(e) {
     if(window.display)
+
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $("#top").offset().top - 200
