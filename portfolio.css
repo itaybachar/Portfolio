@@ -110,14 +110,12 @@ div.project {
 }
 
 div.horizontal {
-	
 	display: flex;
 	flex-direction: row;
 	align-items: left;
 	justify-content: left;
 }
 #infoLogos {
-	
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -144,6 +142,7 @@ p.projectDesc {
 
 pre {
 	word-wrap: none;
+	white-space: nowrap;
 }
 
 img {
@@ -211,6 +210,7 @@ img.github{
 
 	pre {
 		word-wrap: none;
+		white-space: nowrap;
 	}
 
 	body{
