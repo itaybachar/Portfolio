@@ -140,9 +140,8 @@ p.projectDesc {
 	padding: 5px 5px;
 }
 
-pre {
+.prettyprint {
 	word-wrap: none;
-	white-space: nowrap;
 }
 
 img {
@@ -208,9 +207,8 @@ img.github{
 		display: none;
 	}
 
-	pre {
+	.prettyprint {
 		word-wrap: none;
-		white-space: nowrap;
 	}
 
 	body{
