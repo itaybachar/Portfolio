@@ -2,7 +2,7 @@ var projectDataLoc = "projectData.json";
 var projects = [];
 var projectAmount;
 var is_mobile = false;
-
+var navOpen = false;
 $( document ).ready(function() {      
     var isMobile = window.matchMedia("only screen and (max-width: 760px)");
     
@@ -68,8 +68,10 @@ function loadProjects(){
 }
 //Animate goto!
 $("#topNav").on('click', function(e) {
-    if(window.display)
-
+    if(navOpen && is_mobile){
+        $('#navbar').collapse("hide");
+       
+    }
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $("#top").offset().top - 200
@@ -83,6 +85,7 @@ $("#aboutNav").on('click', function(e) {
             scrollTop: $("#aboutMe").offset().top - 170
         }, 200);
     }else {
+        $('#navbar').collapse("hide");
         $('html, body').animate({
             scrollTop: $("#aboutMe").offset().top - 330
         }, 200);
@@ -96,6 +99,7 @@ $("#projectsNav").on('click', function(e) {
             scrollTop: $("#projects").offset().top - 145
         }, 200);
     }else{
+        $('#navbar').collapse("hide");
         $('html, body').animate({
             scrollTop: $("#projects").offset().top - 220
         }, 200);
@@ -109,6 +113,7 @@ $("#contactNav").on('click', function(e) {
             scrollTop: $("#contact").offset().top - 170
         }, 200);
     } else{
+        $('#navbar').collapse("hide");
         $('html, body').animate({
             scrollTop: $("#contact").offset().top
         }, 200);
@@ -119,6 +124,14 @@ $("#contactNav").on('click', function(e) {
 function sleep (time) {
     return new Promise((resolve) => setTimeout(resolve, time));
 }
+
+$('#navbar').on('shown.bs.collapse', function () {
+   navOpen = true;
+ });
+
+ $('#navbar').on('hidden.bs.collapse', function () {
+    navOpen = false;
+ });
 
 
 
