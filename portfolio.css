@@ -115,6 +115,12 @@ div.horizontal {
 	align-items: left;
 	justify-content: left;
 }
+#infoLogos {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
 
 h4 {
 	margin: 10px 0px;
@@ -199,6 +205,11 @@ img.github{
 	s{
 		display: none;
 	}
+
+	pre {
+		word-wrap: none;
+	}
+
 	body{
 		/* padding-top: 210px; */
 	}
