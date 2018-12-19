@@ -200,6 +200,8 @@ p.info{
 
 img.github{	
 	height: 50px;
+	background-color: transparent;
+	border: none;
 }
 
 @media only screen and (max-width: 768px){
