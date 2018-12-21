@@ -46,10 +46,17 @@ function loadProjects(){
     for(var i = 0; i<projects.length;i++){
         var codeDivId = "code"+i;
         var snippetButtonId =i;
+        var mediaCode;
+        if(projects[i].mediaAddress.includes(".mp4")){
+            mediaCode = `<video class='prev' controls src="`+projects[i].mediaAddress+`" ></video>`;
+        }else {
+            mediaCode = `<img src='`+projects[i].mediaAddress+`'>`;
+        }
+       
         
         var customProject = `<div class='project'><div class='horizontal'>
         <div class='vertical'>
-        <img src='` + projects[i].mediaAddress + `'>
+        ` + mediaCode + `
         <a target='_blank' rel='noopener noreferrer' href='`+projects[i].githubLink+`'>
         <img class='github' src='res/githubLogo.png' >
         </a>

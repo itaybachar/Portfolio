@@ -33,7 +33,7 @@ div.vertical{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: top;
 }
 
 h1 {
@@ -204,6 +204,11 @@ img.github{
 	border: none;
 }
 
+video.prev{
+	padding: 5px;
+	height: 200px;
+}
+
 @media only screen and (max-width: 768px){
 	s{
 		display: none;
@@ -213,6 +218,10 @@ img.github{
 	}
 	 */
 	div.project{
+		width: 100%;
+	}
+	video.prev{
+		padding: 5px;
 		width: 100%;
 	}
 	div.horizontal{
