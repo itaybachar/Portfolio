@@ -173,6 +173,8 @@ pre.prettyprint {
 	height: 300px;
 	overflow-y: auto;
 	overflow-x: auto;
+	white-space: nowrap;
+	text-overflow: clip;
 }
 
 img {
