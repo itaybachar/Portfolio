@@ -64,7 +64,7 @@ function loadProjects(){
         <div><h4>` +projects[i].projectName + `
         </h4><p class='projectDesc'>` +projects[i].projectDescription + `</p>
         </div></div><div id='`+codeDivId+`' class='collapse out'>
-        <pre class='prettyprint linenums' style='white-space: pre;'>`+projects[i].codeSnippet+`</pre>
+        <pre class='prettyprint linenums'>`+projects[i].codeSnippet+`</pre>
         </div>
         <button id='`+snippetButtonId+ `' class='codeSnip' data-toggle='collapse' data-target='#`+codeDivId+`' onclick='collapseOther(this.id)'>
         <span>Show Code Snippet</span></button></div>`;

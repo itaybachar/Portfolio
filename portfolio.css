@@ -13,6 +13,12 @@
 	background-color: transparent;
 }
 
+::-webkit-scrollbar-corner
+{
+	border-radius: 10px;
+	background: #e6e6e6;
+}
+
 ::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
@@ -162,10 +168,12 @@ p.projectDesc {
 	font-size: 18px;
 	padding: 5px 5px;
 }
-/* 
+
 pre.prettyprint {
-	white-space: pre;
-} */
+	height: 300px;
+	overflow-y: auto;
+	overflow-x: auto;
+}
 
 img {
 	margin: 10px 10px;
@@ -241,10 +249,8 @@ video.prev{
 	s{
 		display: none;
 	}
-	/* pre.prettyprint {
-		white-space: pre;
-	}
-	 */
+
+
 	div.project{
 		width: 100%;
 	}
