@@ -251,7 +251,14 @@ video.prev{
 	s{
 		display: none;
 	}
-
+	
+	pre.prettyprint {
+		height: 300px;
+		overflow-y: auto;
+		overflow-x: auto;
+		white-space: nowrap;
+		text-overflow: clip;
+	}
 
 	div.project{
 		width: 100%;
