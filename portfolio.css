@@ -1,4 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,250,300,400,500,600,700,900,italic);
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #e6e6e6;
+}
 
 body {
 	background-color: #2d2d2d;
@@ -81,6 +102,8 @@ p.aboutMe {
 	text-align: left;
 	font-weight: 300;
 	font-size: 20px;
+	height: 400px;
+	overflow-y: auto;
 	word-wrap: normal;
 }
 
@@ -210,6 +233,11 @@ video.prev{
 }
 
 @media only screen and (max-width: 768px){
+	p.aboutMe {
+		overflow-y: auto;
+		height: 400px;
+	}
+
 	s{
 		display: none;
 	}
