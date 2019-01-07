@@ -173,6 +173,7 @@ pre.prettyprint {
 	height: 300px;
 	overflow-y: auto;
 	overflow-x: auto;
+	white-space: pre;
 	text-overflow: clip;
 }
 
@@ -255,6 +256,7 @@ video.prev{
 		height: 300px;
 		overflow-y: auto;
 		overflow-x: auto;
+		white-space: pre;
 		text-overflow: clip;
 	}
 
